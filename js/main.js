@@ -11,12 +11,12 @@
   ];
 
   const pics = [
-    '/img/apple.jpg',
-    '/img/lemon.jpg',
-    '/img/banana.jpg',
-    '/img/peach.jpg',
-    '/img/watermelon.jpg',
-    '/img/strawberry.jpg',
+    'img/apple.jpg',
+    'img/lemon.jpg',
+    'img/banana.jpg',
+    'img/peach.jpg',
+    'img/watermelon.jpg',
+    'img/strawberry.jpg',
   ];
 
   let pic;
@@ -62,7 +62,7 @@
       }, 100);
 
       target.innerHTML = 'Time Up!<br>click to replay';
-      picture.src = '/img/clock.jpg';
+      picture.src = 'img/clock.jpg';
     }
   }
 
