@@ -14,7 +14,7 @@
     'https://chamty.github.io/typingGame/img/apple.jpg',
     'https://chamty.github.io/typingGame/img/lemon.jpg',
     'https://chamty.github.io/typingGame/img/banana.jpg',
-    'https://chamty.github.io/typingGame/img/peach.jpg',
+    'https://chamty.github.io/typingGame/img/peach-min.jpg',
     'https://chamty.github.io/typingGame/img/watermelon.jpg',
     'https://chamty.github.io/typingGame/img/strawberry.jpg',
   ];
