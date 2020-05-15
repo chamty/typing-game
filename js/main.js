@@ -11,12 +11,12 @@
   ];
 
   const pics = [
-    'https://chamty.github.io/typingGame/img/apple.jpg',
-    'https://chamty.github.io/typingGame/img/lemon.jpg',
-    'https://chamty.github.io/typingGame/img/banana.jpg',
+    'https://chamty.github.io/typingGame/img/apple-min.jpg',
+    'https://chamty.github.io/typingGame/img/lemon-min.jpg',
+    'https://chamty.github.io/typingGame/img/banana-min.jpg',
     'https://chamty.github.io/typingGame/img/peach-min.jpg',
-    'https://chamty.github.io/typingGame/img/watermelon.jpg',
-    'https://chamty.github.io/typingGame/img/strawberry.jpg',
+    'https://chamty.github.io/typingGame/img/watermelon-min.jpg',
+    'https://chamty.github.io/typingGame/img/strawberry-min.jpg',
   ];
 
   let pic;
@@ -97,6 +97,10 @@
   window.addEventListener('keydown', e => {
     if (isPlaying !== true) {
       return;
+    }
+
+    if (e.key !== word[loc]) {
+      let wrong += word;
     }
 
     if (e.key === word[loc]) {
