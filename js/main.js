@@ -61,7 +61,7 @@
         showResult();
       }, 100);
 
-      target.innerHTML = 'Time Up!<br>click to replay';
+      target.innerHTML = 'Time Up!<br>Press space to replay';
       picture.src = 'https://chamty.github.io/typingGame/img/clock.jpg';
     }
   }
@@ -71,10 +71,12 @@
     alert(`${score} letters, ${miss} misses, ${accuracy.toFixed(2)}% accuracy!`);
   }
 
-  window.addEventListener('click', () => {
+  window.addEventListener('keydown', e => {
     if (isPlaying === true) {
       return;
     }
+
+    if (e.keyCode === 32) {
     isPlaying = true;
 
     loc = 0;
@@ -89,6 +91,7 @@
     picture.src = pic;
     startTime = Date.now();
     updateTimer();
+    }
   });
 
   window.addEventListener('keydown', e => {
