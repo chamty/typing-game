@@ -11,12 +11,12 @@
   ];
 
   const pics = [
-    'https://chamty.github.io/typingGame/img/apple.jpg',
-    'https://chamty.github.io/typingGame/img/lemon.jpg',
-    'https://chamty.github.io/typingGame/img/banana.jpg',
-    'https://chamty.github.io/typingGame/img/peach.jpg',
-    'https://chamty.github.io/typingGame/img/watermelon.jpg',
-    'https://chamty.github.io/typingGame/img/strawberry.jpg',
+    '/img/apple.jpg',
+    '/img/lemon.jpg',
+    '/img/banana.jpg',
+    '/img/peach.jpg',
+    '/img/watermelon.jpg',
+    '/img/strawberry.jpg',
   ];
 
   let pic;
