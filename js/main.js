@@ -62,7 +62,7 @@
       }, 100);
 
       target.innerHTML = 'Time Up!<br>click to replay';
-      picture.src = 'https://chamty.github.io/typingGame/img/clock.jpg';
+      picture.src = '/img/clock.jpg';
     }
   }
 
