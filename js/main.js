@@ -24,7 +24,7 @@
   let loc;
   let score;
   let miss;
-  const timeLimit = 10 * 1000;
+  const timeLimit = 30 * 1000;
   let startTime;
   let isPlaying = false;
 
