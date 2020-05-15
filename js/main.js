@@ -11,12 +11,12 @@
   ];
 
   const pics = [
-    'img/apple.jpg',
-    'img/lemon.jpg',
-    'img/banana.jpg',
-    'img/peach.jpg',
-    'img/watermelon.jpg',
-    'img/strawberry.jpg',
+    'https://chamty.github.io/typingGame/img/apple.jpg',
+    'https://chamty.github.io/typingGame/img/lemon.jpg',
+    'https://chamty.github.io/typingGame/img/banana.jpg',
+    'https://chamty.github.io/typingGame/img/peach.jpg',
+    'https://chamty.github.io/typingGame/img/watermelon.jpg',
+    'https://chamty.github.io/typingGame/img/strawberry.jpg',
   ];
 
   let pic;
@@ -62,7 +62,7 @@
       }, 100);
 
       target.innerHTML = 'Time Up!<br>click to replay';
-      picture.src = 'img/clock.jpg';
+      picture.src = 'https://chamty.github.io/typingGame/img/clock.jpg';
     }
   }
 
