@@ -81,7 +81,7 @@
 
     loc = 0;
     score = 0;
-    miss= 0;
+    miss= -1;
     scoreLabel.textContent = score;
     missLabel.textContent =  miss;
     word = words[index];
