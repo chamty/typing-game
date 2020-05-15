@@ -19,6 +19,7 @@
     'https://chamty.github.io/typingGame/img/strawberry-min.jpg',
   ];
 
+  let wrong = [];
   let pic;
   let word;
   let loc;
@@ -62,7 +63,7 @@
       }, 100);
 
       target.innerHTML = 'Time Up!<br>Press space to replay';
-      picture.src = 'https://chamty.github.io/typingGame/img/clock.jpg';
+      picture.src = 'https://chamty.github.io/typingGame/img/clock-min.jpg';
     }
   }
 
@@ -100,8 +101,9 @@
     }
 
     if (e.key !== word[loc]) {
-      let wrong += word;
+      wrong[index] = word;
     }
+    console.log(wrong);
 
     if (e.key === word[loc]) {
       loc++;
