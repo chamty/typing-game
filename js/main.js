@@ -25,7 +25,7 @@
   let loc;
   let score;
   let miss;
-  const timeLimit = 15 * 1000;
+  const timeLimit = 8 * 1000;
   let startTime;
   let isPlaying = false;
 
@@ -35,6 +35,7 @@
   const scoreLabel = document.getElementById('score');
   const missLabel = document.getElementById('miss');
   const timerLabel = document.getElementById('timer');
+  const wrongWord = document.getElementById('wrong');
 
 
   function updateTarget() {
@@ -100,10 +101,12 @@
       return;
     }
 
+    // consoleで間違えた単語を確認できる → 間違えた単語のみプレイできるようにする予定
     if (e.key !== word[loc]) {
-      wrong[index] = word;
+      wrong.push(word);
+      let set = new Set(wrong);
+      console.log(set);
     }
-    console.log(wrong);
 
     if (e.key === word[loc]) {
       loc++;
