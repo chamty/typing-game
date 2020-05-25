@@ -72,17 +72,16 @@
     alert(`${score} letters, ${miss} misses, ${accuracy.toFixed(2)}% accuracy!`);
   }
 
-  window.addEventListener('keydown', e => {
+  function start() {
     if (isPlaying === true) {
       return;
     }
 
-    if (e.keyCode === 32) {
     isPlaying = true;
 
     loc = 0;
     score = 0;
-    miss= -1;
+    miss = 0;
     scoreLabel.textContent = score;
     missLabel.textContent =  miss;
     word = words[index];
@@ -92,6 +91,16 @@
     picture.src = pic;
     startTime = Date.now();
     updateTimer();
+  }
+
+  window.addEventListener('click', () => {
+    start();
+  });
+
+  window.addEventListener('keydown', e => {
+    if (e.keyCode === 32) {
+    start();
+    miss = -1;
     }
   });
 
