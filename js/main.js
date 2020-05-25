@@ -100,13 +100,6 @@
       return;
     }
 
-    // consoleで間違えた単語を確認できる → 間違えた単語のみプレイできるようにする予定
-    if (e.key !== word[loc]) {
-      wrong.push(word);
-      let set = new Set(wrong);
-      console.log(set);
-    }
-
     if (e.key === word[loc]) {
       loc++;
       if (loc === word.length) {
