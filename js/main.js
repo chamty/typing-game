@@ -25,7 +25,7 @@
   let loc;
   let score;
   let miss;
-  const timeLimit = 15 * 1000;
+  const timeLimit = 20 * 1000;
   let startTime;
   let isPlaying = false;
 
@@ -62,7 +62,7 @@
         showResult();
       }, 100);
 
-      target.innerHTML = 'Time Up!<br>Press space to replay';
+      target.innerHTML = 'Time Up!<br>Click or Press space to replay';
       picture.src = 'https://chamty.github.io/typingGame/img/clock-min.jpg';
     }
   }
@@ -98,6 +98,10 @@
   });
 
   window.addEventListener('keydown', e => {
+    if (isPlaying === true) {
+      return;
+    }
+
     if (e.keyCode === 32) {
     start();
     miss = -1;
