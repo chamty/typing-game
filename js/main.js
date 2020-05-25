@@ -25,7 +25,7 @@
   let loc;
   let score;
   let miss;
-  const timeLimit = 8 * 1000;
+  const timeLimit = 15 * 1000;
   let startTime;
   let isPlaying = false;
 
@@ -35,7 +35,6 @@
   const scoreLabel = document.getElementById('score');
   const missLabel = document.getElementById('miss');
   const timerLabel = document.getElementById('timer');
-  const wrongWord = document.getElementById('wrong');
 
 
   function updateTarget() {
