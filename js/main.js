@@ -11,7 +11,7 @@
   ];
 
   const pics = [
-    'https://chamty.github.io/typing-game/img/apple-min.jpg',
+    'https://github.com/chamty/typing-game/blob/master/img/apple-min.jpg',
     'https://chamty.github.io/typing-game/img/lemon-min.jpg',
     'https://chamty.github.io/typing-game/img/banana-min.jpg',
     'https://chamty.github.io/typing-game/img/peach-min.jpg',
